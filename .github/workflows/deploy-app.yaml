@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Deployment Step
+      - name: Deployment Steps
         run: |
           echo "Deploying application..."
           # Your deployment commands here

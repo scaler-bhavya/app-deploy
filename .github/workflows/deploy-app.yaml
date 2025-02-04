@@ -1,1 +1,14 @@
-
+name: Deploy App
+on:
+  push:
+    branches:
+      - main  # Ensure this includes any branch you're working with
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy Step
+        run: |
+          echo "Deploying application..."
+          # Your deployment commands here
